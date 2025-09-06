@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Navbar</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-bg1 text-white">
+    <!-- NAVBAR -->
+    <nav  class="bg-bg2 flex justify-between items-center">
+        <div>
+            <!-- Image -->
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-teal-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ADB5; stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#33CFFF; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B3F0FF; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="150" y="60" font-size="48" font-weight="bold"
+        font-family="Arial" text-anchor="middle" fill="url(#grad-teal-blue)">
+    Murugan
+  </text>
+</svg>
+        </div>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- ELEMENTS INSIDE NAV -->
+
+        <div>
+            <ul class="hidden md:flex space-x-10">
+                <li class="bg-bg1 py-1 px-2 rounded-xl text-bg3 hover:text-white font-medium cursor-pointer" style="box-shadow: 0 0 10px rgb(105, 104, 104);">Home</li>
+                <li class="bg-bg1 py-1 px-2 rounded-xl text-bg3 hover:text-white font-medium cursor-pointer" style="box-shadow: 0 0 10px rgb(105, 104, 104);">Contact</li>
+                <li class="bg-bg1 py-1 px-2 rounded-xl text-bg3 hover:text-white font-medium cursor-pointer" style="box-shadow: 0 0 10px rgb(105, 104, 104);">About</li>
+            </ul>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- Button -->
+<div class="space-x-6 hidden md:flex">
+  <!-- Sign in button -->
+  <button class="flex items-center gap-2 p-2 bg-bg-4 font-bold rounded-full">
+    <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M15 12L3 12M15 12L11 16M15 12L11 8"
+            stroke="#f6f5f4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <span>sign in</span>
+  </button>
+
+  <!-- Links button -->
+  <button class=" flex items-center gap-2 p-2 bg-bg-4 font-bold rounded-full">
+    <svg viewBox="0 0 1024 1024" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+      <path d="M823.1 200.7c-71.3-71.3-187.3-71.3-258.6 0L409.4 355.8c-71.3 71.3-71.3 187.3 0 258.6L446 651l51.7-51.7-36.6-36.6c-42.8-42.8-42.8-112.4 0-155.2l155.2-155.2c42.8-42.8 112.4-42.8 155.2 0 42.8 42.8 42.8 112.4 0 155.2l-71.3 71.3 51.7 51.7 71.3-71.3c71.2-71.2 71.2-187.2-0.1-258.5z"/>
+      <path d="M577.8 372.9L526 424.6l36.6 36.6c42.8 42.8 42.8 112.4 0 155.2L407.4 771.5c-42.8 42.8-112.4 42.8-155.2 0-42.8-42.8-42.8-112.4 0-155.2l58.4-58.4-51.6-51.7-58.4 58.4c-71.3 71.3-71.3 187.3 0 258.6 35.6 35.6 82.5 53.5 129.3 53.5 46.8 0 93.7-17.8 129.3-53.5L614.4 668c71.3-71.3 71.3-187.3 0-258.6l-36.6-36.5z"/>
+    </svg>
+    <span>links</span>
+  </button>
+</div>
+
+<button class="md:hidden mr-1" id="menu" onclick="menu()">
+<svg viewBox="0 -1 20 20" version="1.1" class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>hamburger</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-210.000000, -887.000000)" fill="#ffffff"> <path d="M229,895 L211,895 C210.448,895 210,895.448 210,896 C210,896.553 210.448,897 211,897 L229,897 C229.552,897 230,896.553 230,896 C230,895.448 229.552,895 229,895 L229,895 Z M229,903 L211,903 C210.448,903 210,903.448 210,904 C210,904.553 210.448,905 211,905 L229,905 C229.552,905 230,904.553 230,904 C230,903.448 229.552,903 229,903 L229,903 Z M211,889 L229,889 C229.552,889 230,888.553 230,888 C230,887.448 229.552,887 229,887 L211,887 C210.448,887 210,887.448 210,888 C210,888.553 210.448,889 211,889 L211,889 Z" id="hamburger" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+</button>
+
+    </nav>
+
+    <div id="all-menu" class="hidden">
+      <!-- RESPONSIVE------------------------------------------------------------------------- -->
+          <div>
+            <ul class="md:hidden space-y-5 text-center">
+                <li class="bg-bg1 py-1 px-2 rounded-xl text-bg3 hover:text-white font-medium cursor-pointer" style="box-shadow: 0 0 10px rgb(105, 104, 104);">Home</li>
+                <li class="bg-bg1 py-1 px-2 rounded-xl text-bg3 hover:text-white font-medium cursor-pointer" style="box-shadow: 0 0 10px rgb(105, 104, 104);">Contact</li>
+                <li class="bg-bg1 py-1 px-2 rounded-xl text-bg3 hover:text-white font-medium cursor-pointer" style="box-shadow: 0 0 10px rgb(105, 104, 104);">About</li>
+            </ul>
+        </div>
+
+
+<div  class="md:hidden flex justify-center mt-3 space-x-3">
+  <button class=" items-center gap-2 p-2 bg-bg-4 font-bold rounded-full">
+    <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M15 12L3 12M15 12L11 16M15 12L11 8"
+            stroke="#f6f5f4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </button>
+
+    <button class=" items-center gap-2 p-2 bg-bg-4 font-bold rounded-full">
+    <svg viewBox="0 0 1024 1024" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+      <path d="M823.1 200.7c-71.3-71.3-187.3-71.3-258.6 0L409.4 355.8c-71.3 71.3-71.3 187.3 0 258.6L446 651l51.7-51.7-36.6-36.6c-42.8-42.8-42.8-112.4 0-155.2l155.2-155.2c42.8-42.8 112.4-42.8 155.2 0 42.8 42.8 42.8 112.4 0 155.2l-71.3 71.3 51.7 51.7 71.3-71.3c71.2-71.2 71.2-187.2-0.1-258.5z"/>
+      <path d="M577.8 372.9L526 424.6l36.6 36.6c42.8 42.8 42.8 112.4 0 155.2L407.4 771.5c-42.8 42.8-112.4 42.8-155.2 0-42.8-42.8-42.8-112.4 0-155.2l58.4-58.4-51.6-51.7-58.4 58.4c-71.3 71.3-71.3 187.3 0 258.6 35.6 35.6 82.5 53.5 129.3 53.5 46.8 0 93.7-17.8 129.3-53.5L614.4 668c71.3-71.3 71.3-187.3 0-258.6l-36.6-36.5z"/>
+    </svg>
+  </button>
+</div>
+</div>
+
+<div class="bg-bg2 text-white rounded-2xl mt-3" style="box-shadow: 0 0 40px rgb(255, 255, 255);">
+<h1 class="text-center font-bold text-4xl pt-2">Counter App</h1>
+<h1 class="font-medium text-2xl text-center pt-2">Count:</h1>
+<h1 class="text-center font-bold text-4xl pt-2" id="text">0</h1>
+<div class="text-center space-x-15 pt-5">
+<button class="bg-bg-4 rounded-full" id="plus">
+<svg viewBox="0 0 24 24" fill="none" class="h-15 w-15" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8V11H16C16.5523 11 17 11.4477 17 12C17 12.5523 16.5523 13 16 13H13V16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16V13H8C7.44771 13 7 12.5523 7 12C7 11.4477 7.44772 11 8 11H11V8Z" fill="#ffffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM3.00683 12C3.00683 16.9668 7.03321 20.9932 12 20.9932C16.9668 20.9932 20.9932 16.9668 20.9932 12C20.9932 7.03321 16.9668 3.00683 12 3.00683C7.03321 3.00683 3.00683 7.03321 3.00683 12Z" fill="#ffffff"></path> </g></svg>
+</button>
+
+<button class="bg-bg-4 rounded-full" id="minus">
+<svg viewBox="0 -0.5 21 21" version="1.1" class="h-15 w-15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>minus_circle [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-379.000000, -520.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M329.3,371 L337.7,371 L337.7,369 L329.3,369 L329.3,371 Z M333.5,378 C328.8674,378 325.1,374.411 325.1,370 C325.1,365.588 328.8674,362 333.5,362 C338.13155,362 341.9,365.588 341.9,370 C341.9,374.411 338.13155,378 333.5,378 L333.5,378 Z M333.5,360 C327.70085,360 323,364.477 323,370 C323,375.523 327.70085,380 333.5,380 C339.2981,380 344,375.523 344,370 C344,364.477 339.2981,360 333.5,360 L333.5,360 Z" id="minus_circle-[#ffffff]"> </path> </g> </g> </g> </g></svg></button>
+</div>
+
+<div class="text-center pt-5">
+<button id="reset">
+<svg fill="#ffffff" viewBox="0 0 1920 1920" class="h-15 w-15" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M960 0v213.333c411.627 0 746.667 334.934 746.667 746.667S1371.627 1706.667 960 1706.667 213.333 1371.733 213.333 960c0-197.013 78.4-382.507 213.334-520.747v254.08H640V106.667H53.333V320h191.04C88.64 494.08 0 720.96 0 960c0 529.28 430.613 960 960 960s960-430.72 960-960S1489.387 0 960 0" fill-rule="evenodd"></path> </g></svg>
+<span class="font-bold">Reset</span>
+</button>
+</div>
+</div>
+<div class="w-full fixed bottom-0 " >
+<div class="bg-bg2 rounded-lg" style="box-shadow: 0 0 30px white;">
+<h1 class="text-3xl text-center text-white font-bold">Thank You 🎉</h1>
+<h1 class="text-md p-2 text-white font-medium text-center">
+I truly appreciate you checking out my project. Your time and encouragement motivate me to keep learning and building more!
+</h1>
+</div>
+</div>
+
+<div class="flex justify-center items-center h-screen text-black">
+        <div class="bg-orange-400 p-10 rounded-2xl" id="change" style="box-shadow: 0 0 30px black;">
+            <h1 class="text-6xl font-bold ">Color changer</h1>
+            <h1 class="font-bold text-center text-xl mt-5">Click here to change color: </h1>
+            <div class="flex justify-center mt-5">
+            <button  id="btn" class="flex bg-bg-4 cursor-pointer hover:bg-blue-800 hover:text-white p-2 px-5 py-3 space-x-2 font-bold text-xl">
+                <svg fill="#ffffff" viewBox="0 0 16 16" class="h-7 w-7" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M8 .5C3.58.5 0 3.86 0 8s3.58 7.5 8 7.5c4.69 0 1.04-2.83 2.79-4.55.76-.75 1.63-.87 2.44-.87.37 0 .73.03 1.06.03.99 0 1.72-.23 1.72-2.1C16 3.86 12.42.5 8 .5zm6.65 8.32c-.05.01-.16.02-.37.02-.14 0-.29 0-.45-.01-.19 0-.39-.01-.61-.01-.89 0-2.19.13-3.32 1.23-1.17 1.16-.9 2.6-.74 3.47.03.18.08.44.09.6-.16.05-.52.13-1.26.13-3.72 0-6.75-2.8-6.75-6.25S4.28 1.75 8 1.75s6.75 2.8 6.75 6.25c0 .5-.06.74-.1.82z"></path><path d="M5.9 9.47c-1.03 0-1.86.8-1.86 1.79s.84 1.79 1.86 1.79 1.86-.8 1.86-1.79-.84-1.79-1.86-1.79zm0 2.35c-.35 0-.64-.25-.64-.56s.29-.56.64-.56.64.25.64.56-.29.56-.64.56zm-.2-4.59c0-.99-.84-1.79-1.86-1.79s-1.86.8-1.86 1.79.84 1.79 1.86 1.79 1.86-.8 1.86-1.79zm-1.86.56c-.35 0-.64-.25-.64-.56s.29-.56.64-.56.64.25.64.56-.29.56-.64.56zM7.37 2.5c-1.03 0-1.86.8-1.86 1.79s.84 1.79 1.86 1.79 1.86-.8 1.86-1.79S8.39 2.5 7.37 2.5zm0 2.35c-.35 0-.64-.25-.64-.56s.29-.56.64-.56.64.25.64.56-.29.56-.64.56zm2.47 1.31c0 .99.84 1.79 1.86 1.79s1.86-.8 1.86-1.79-.84-1.79-1.86-1.79-1.86.8-1.86 1.79zm2.5 0c0 .31-.29.56-.64.56s-.64-.25-.64-.56.29-.56.64-.56.64.25.64.56z"></path></g></svg>
+                <span>click Here</span>
+            </button>
+            </div>
+            <h1 class="font-bold mt-5 text-center bg-white" id="text">Colour Code: default colour</h1>
+        </div>
+    </div>
+
+<script>
+let a = document.getElementById("menu");
+function menu()
+{
+  document.getElementById("all-menu").classList.toggle("hidden")
+}
+
+let tex = document.getElementById("text");
+let incre = document.getElementById("plus");
+let decre = document.getElementById("minus");
+let reset = document.getElementById("reset");
+
+let count = 0;
+
+function display() {
+tex.textContent = count;
+}
+
+incre.addEventListener("click", () => {
+count++;
+display();
+});
+
+decre.addEventListener("click", () => {
+count--;
+display();
+});
+
+reset.addEventListener("click", () => {
+count = 0;
+display();
+});
+
+        let code = "0123456789ABCDEF";
+
+        let btn = document.getElementById("btn");
+
+        let change = document.getElementById("change");
+
+        let tet = document.getElementById("text");
+
+        btn.addEventListener("click",()=>{
+
+            let hex = "#";
+
+            for(i=0; i<6; i++)
+
+        {
+
+            let rand = Math.floor(Math.random()*code.length);
+
+            hex += code[rand];
+
+        }
+
+        change.style.backgroundColor = hex;
+
+        tet.textContent = "Colour Code: "+hex;
+
+        })
+</script>
+</body>
+</html>
